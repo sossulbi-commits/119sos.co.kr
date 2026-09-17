@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SOS설비 | 막힘·누수·동파 365일 24시간 당일 출동</title>
+<meta name="description" content="하수구·변기·싱크대막힘, 누수탐지, 해빙, 수리교체 전문. 365일 24시간 당일 출동. 출장비 무료. 미해결 시 0원.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SOS설비 | 막힘·누수·동파 365일 24시간">
+<meta property="og:description" content="하수구·변기·싱크대막힘, 누수탐지, 해빙, 수리교체 전문. 365일 24시간 당일 출동.">
+<meta property="og:image" content="og_image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,'Noto Sans KR',sans-serif;background:#EFF6FF;color:#0A1628;}
+a{text-decoration:none;color:inherit;}
+
+/* ── 히어로 ── */
+.hero{background:linear-gradient(160deg,#5BB8F5 0%,#3A9FE0 100%);padding:40px 20px 50px;text-align:center;position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:40px;background:#EFF6FF;clip-path:ellipse(55% 100% at 50% 100%);}
+.hero-brand{font-size:36px;font-weight:900;color:#CC0000;letter-spacing:-.03em;margin-bottom:6px;}
+.hero-sub{font-size:16px;font-weight:700;color:#fff;margin-bottom:20px;opacity:.95;}
+.hero-char{width:140px;height:auto;display:block;margin:0 auto 20px;filter:drop-shadow(0 8px 16px rgba(0,0,0,.2));}
+.hero-badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;}
+.badge{background:rgba(255,255,255,.85);color:#0A1628;font-size:11px;font-weight:800;padding:6px 14px;border-radius:20px;}
+.badge.red{background:#CC0000;color:#fff;}
+.btn-call{display:inline-flex;align-items:center;gap:8px;background:#CC0000;color:#fff;font-size:16px;font-weight:900;padding:16px 36px;border-radius:50px;box-shadow:0 4px 20px rgba(204,0,0,.4);animation:pulse 2.2s ease-in-out infinite;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(204,0,0,.4);transform:scale(1);}50%{box-shadow:0 6px 28px rgba(204,0,0,.6);transform:scale(1.03);}}
+
+/* ── 서비스 카드 ── */
+.sec{padding:32px 16px 40px;max-width:480px;margin:0 auto;}
+.sec-title{font-size:18px;font-weight:900;text-align:center;margin-bottom:20px;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.card{background:#fff;border-radius:16px;padding:20px 14px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.07);transition:transform .15s,box-shadow .15s;border:2px solid transparent;}
+.card:active{transform:scale(.97);}
+.card-emoji{font-size:32px;margin-bottom:8px;}
+.card-name{font-size:14px;font-weight:900;margin-bottom:4px;}
+.card-desc{font-size:11px;color:#6B7684;line-height:1.4;}
+.card:nth-child(1){border-color:#5BB8F5;}
+.card:nth-child(2){border-color:#FF9800;}
+.card:nth-child(3){border-color:#4CAF50;}
+.card:nth-child(4){border-color:#9C27B0;}
+.card:nth-child(5){border-color:#03A9F4;}
+.card:nth-child(6){border-color:#607D8B;}
+
+/* ── 신뢰 배지 ── */
+.trust{background:#fff;margin:0 16px 32px;border-radius:16px;padding:20px;display:flex;justify-content:space-around;max-width:448px;margin-left:auto;margin-right:auto;box-shadow:0 2px 10px rgba(0,0,0,.06);}
+.trust-item{text-align:center;}
+.trust-num{font-size:22px;font-weight:900;color:#CC0000;}
+.trust-label{font-size:11px;color:#6B7684;margin-top:2px;}
+
+/* ── 하단 CTA ── */
+.cta-bar{background:#CC0000;padding:20px 16px;text-align:center;}
+.cta-bar p{color:rgba(255,255,255,.85);font-size:13px;margin-bottom:12px;}
+.cta-bar a{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#CC0000;font-size:15px;font-weight:900;padding:14px 32px;border-radius:50px;}
+
+/* ── 푸터 ── */
+footer{background:#0A1628;color:#8B95A1;font-size:11px;padding:20px 16px;text-align:center;line-height:1.8;}
+</style>
+</head>
+<body>
+
+<!-- 히어로 -->
+<section class="hero">
+  <div class="hero-brand">SOS설비</div>
+  <div class="hero-sub">365일 24시간 당일 출동</div>
+  <img class="hero-char" src="images/hero_char.jpg" alt="SOS설비 전문 기사">
+  <div class="hero-badges">
+    <span class="badge red">미해결 시 0원</span>
+    <span class="badge">출장비 무료</span>
+    <span class="badge">현장 확인 후 견적</span>
+    <span class="badge">동의 후 작업</span>
+  </div>
+  <a href="tel:00000000000" class="btn-call">📞 지금 바로 전화하기</a>
+</section>
+
+<!-- 서비스 카드 -->
+<section class="sec">
+  <div class="sec-title">🔧 전문 서비스 안내</div>
+  <div class="cards">
+    <a class="card" href="sos_drain_full.html">
+      <div class="card-emoji">🚿</div>
+      <div class="card-name">하수구막힘</div>
+      <div class="card-desc">배수불량·역류·냄새<br>고압세척·스케일링</div>
+    </a>
+    <a class="card" href="sos_toilet_full.html">
+      <div class="card-emoji">🚽</div>
+      <div class="card-name">변기막힘</div>
+      <div class="card-desc">막힘·역류·이물질<br>관통기·흡입·탈거</div>
+    </a>
+    <a class="card" href="sos_sink_full.html">
+      <div class="card-emoji">🍳</div>
+      <div class="card-name">싱크대막힘</div>
+      <div class="card-desc">기름슬러지·역류<br>석션·스케일링</div>
+    </a>
+    <a class="card" href="sos_leak_full.html">
+      <div class="card-emoji">💧</div>
+      <div class="card-name">누수탐지</div>
+      <div class="card-desc">천장·벽·바닥 누수<br>열화상·음파 탐지</div>
+    </a>
+    <a class="card" href="sos_defrost_full.html">
+      <div class="card-emoji">❄️</div>
+      <div class="card-name">해빙작업</div>
+      <div class="card-desc">동파·계량기·보일러<br>열선·스팀 해빙</div>
+    </a>
+    <a class="card" href="sos_repair_full.html">
+      <div class="card-emoji">🔧</div>
+      <div class="card-name">수리·교체</div>
+      <div class="card-desc">수전·변기·세면대<br>트랩·팝업 교체</div>
+    </a>
+  </div>
+</section>
+
+<!-- 신뢰 지표 -->
+<div class="trust">
+  <div class="trust-item">
+    <div class="trust-num">365일</div>
+    <div class="trust-label">연중무휴</div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-num">24시간</div>
+    <div class="trust-label">24시간 출동</div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-num">30분↓</div>
+    <div class="trust-label">평균 출동시간</div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-num">0원</div>
+    <div class="trust-label">미해결 시</div>
+  </div>
+</div>
+
+<!-- 하단 CTA -->
+<div class="cta-bar">
+  <p>막힘·누수·동파 긴급 출동 — 지금 바로 연락하세요</p>
+  <a href="tel:00000000000">📞 00000000000</a>
+</div>
+
+<!-- 푸터 -->
+<footer>
+  SOS설비 · 365일 24시간 운영<br>
+  출장비 무료 · 현장 확인 후 견적 · 동의 후 작업 · 미해결 시 0원
+</footer>
+
+</body>
+</html>
