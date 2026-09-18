@@ -250,12 +250,12 @@ a{color:inherit;text-decoration:none;}
 <!-- 서비스 탭 -->
 <nav class="svc-nav">
   <div class="svc-nav-inner">
-    <a href="#"><span class="ni">🚿</span>하수구</a>
-    <a href="#"><span class="ni">🍳</span>싱크대</a>
-    <a href="#"><span class="ni">🚽</span>변기</a>
-    <a href="#" class="active"><span class="ni">💧</span>누수</a>
-    <a href="#"><span class="ni">❄️</span>해빙</a>
-    <a href="#"><span class="ni">🔩</span>수리교체</a>
+    <a href="sos_drain_full.html"><span class="ni">🚿</span>하수구</a>
+    <a href="sos_sink_full.html"><span class="ni">🍳</span>싱크대</a>
+    <a href="sos_toilet_full.html"><span class="ni">🚽</span>변기</a>
+    <a href="sos_leak_full.html" class="active"><span class="ni">💧</span>누수</a>
+    <a href="sos_defrost_full.html"><span class="ni">❄️</span>해빙</a>
+    <a href="sos_repair_full.html"><span class="ni">🔩</span>수리교체</a>
     <a href="#inquiry"><span class="ni">📋</span>상담</a>
   </div>
 </nav>
@@ -329,7 +329,7 @@ a{color:inherit;text-decoration:none;}
       <div class="sit-result" data-sit-res="overflow">
         <div class="sit-result-label">🔍 진단 안내</div>
         <div class="sit-result-text">수도요금 급등은 <strong>눈에 보이지 않는 매립 배관 누수</strong>가 원인일 수 있어요. 정밀 탐지 장비로 숨겨진 누수를 찾아 드려요.</div>
-        <a href="tel:00000000000" class="sit-cta">📞 누수 탐지 요청</a>
+        <a class="active" href="tel:00000000000" class="sit-cta">📞 누수 탐지 요청</a>
       </div>
     </div>
   </div>
@@ -575,14 +575,13 @@ document.querySelectorAll('.sit-opt').forEach(btn => {
 // ── 실시간 문의 ──
 (function(){
   const NAMES = ['김**','이**','박**','최**','정**','강**','조**','윤**','장**','임**','한**','오**','서**','신**','권**','황**','안**','송**'];
-  const SVCS_HIGH = ['하수구막힘','하수구막힘','싱크대막힘','싱크대막힘','배수구막힘','배관막힘','욕실하수구','화장실하수구','하수구막힘','싱크대역류','배관청소','누수탐지','변기교체','세면대교체','싱크대배관','배수구막힘'];
-  const SVCS_LOW  = ['음식점하수구','공장하수구','횡주관막힘','우수관막힘','정화조막힘','상가누수','하수구악취'];
+  const SVCS = ['하수구막힘', '하수구막힘', '싱크대막힘', '변기막힘', '누수탐지', '배수구막힘', '배관막힘', '욕실하수구', '화장실하수구', '싱크대역류', '배관청소', '해빙작업', '수전교체', '세면대교체', '변기교체', '싱크대배관', '음식점하수구', '공장하수구', '횡주관막힘', '상가누수', '하수구악취', '우수관막힘', '정화조막힘', '보일러동파', '계량기해빙'];
   function rnd(a){return a[Math.floor(Math.random()*a.length)];}
   function pad(n){return String(n).padStart(2,'0');}
   function fmtDate(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());}
   function getDateStr(ago){const d=new Date();d.setDate(d.getDate()-ago);return fmtDate(d);}
   function getWish(){return Math.random()<0.9?getDateStr(0):(()=>{const d=new Date();d.setDate(d.getDate()+Math.floor(Math.random()*20)+1);return fmtDate(d);})();}
-  function rndSvc(){return Math.random()<0.9?rnd(SVCS_HIGH):rnd(SVCS_LOW);}
+  function rndSvc(){return rnd(SVCS);}
   function isNaver(){return Math.random()<0.4;}
 
   const track = document.getElementById('rtTrack');
